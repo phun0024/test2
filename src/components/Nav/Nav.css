@@ -1,0 +1,40 @@
+nav {
+    /* background: rgba(255, 255, 255, 0.3);
+    width: max-content;
+    display: block;
+    padding: .7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%; */
+    background: #be755625;
+    width: max-content;
+    display: block;
+    padding: .8rem 3.2rem;
+    z-index: 9;
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    gap: 1.2rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(12px);
+}
+
+nav a {
+    background: transparent;
+    padding: .4rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, .2);
+}
+
+nav a.active {
+    background: var(--color-primary);
+    color: var(--color-bg);
+}

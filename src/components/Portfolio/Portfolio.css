@@ -1,0 +1,54 @@
+.portfolio_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.portfolio_item {
+    background: var(--color-primary-variant);
+    padding: 1.2rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.portfolio_item:hover {
+    border-color: var(--color-primary);
+    background: transparent;
+    transform: scale(1.03);
+}
+
+.portfolio_item-image {
+    border-radius: .8rem;
+    overflow: hidden;
+}
+
+.portfolio_item h3 {
+    margin: .8rem 0 1rem;
+    color: var(--color-light);
+}
+
+.portfolio_item-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    margin-bottom: 1rem;
+}
+
+/* ============== MEDIUM DEVICES =============== */
+
+@media screen and (max-width: 1024px) {
+    .portfolio_container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+}
+
+/* ============== SMALL DEVICES =============== */
+
+@media screen and (max-width: 600px) {
+   .portfolio_container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+   }
+}

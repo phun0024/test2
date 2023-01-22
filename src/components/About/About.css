@@ -1,0 +1,113 @@
+.about_container {
+    display: grid;
+    grid-template-columns: 35% 55%;
+    gap: 10%;
+}
+
+.about_me {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    display: grid;
+    place-items: center;
+    clip-path: polygon(0% 7%, 14% 1%, 45% 3%, 84% 0%, 100% 5%, 94% 14%, 100% 24%, 100% 37%, 91% 40%, 94% 42%, 100% 47%, 93% 54%, 98% 59%, 100% 68%, 93% 76%, 99% 84%, 99% 91%, 100% 100%, 91% 100%, 68% 100%, 45% 99%, 30% 99%, 13% 96%, 1% 100%, 3% 84%, 0% 64%, 5% 44%, 1% 29%, 9% 20%, 1% 16%, 6% 11%);
+}
+
+.about_me-image {
+    aspect-ratio: 1/1;
+    background-color: var(--color-primary);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.about_cards {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 1.5rem;
+}
+
+.about_card {
+    background: var(--color-primary-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.about_card:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+    cursor: default;
+}
+
+.about_icon {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.about_card h5 {
+    font-size: .95rem;
+    font-weight: 400;
+}
+
+.about_card small {
+    font-size: .8rem;
+    color: var(--color-light);
+    font-weight: 100;
+}
+
+.about_content p {
+    margin: 1.6rem 0;
+    color: var(--color-light);
+    font-size: .9rem;
+    font-weight: 200;
+}
+
+.about_content ul {
+    padding-left: 2rem;
+}
+
+.about_content li {
+    list-style: square;
+}
+/* ============== MEDIUM DEVICES =============== */
+
+@media screen and (max-width: 1024px) {
+
+    .about_container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .about_me {
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+
+    .about_content p {
+        margin: 2rem 0;
+    }
+}
+
+/* ============== SMALL DEVICES =============== */
+
+@media screen and (max-width: 600px) {
+    .about_me {
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+
+    .about_cards {
+     gap: 1rem;
+    }
+
+   .about_content {
+    text-align: center;
+   }
+
+   .about_content p {
+    margin: 2rem 0;
+   }
+
+}
